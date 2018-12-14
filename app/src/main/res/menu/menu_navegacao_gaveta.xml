@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/user"
+        android:icon="@drawable/account"
+        android:title="Minha Conta" />
+
+    <item
+        android:id="@+id/propostas"
+        android:icon="@drawable/clipboard_text"
+        android:title="Minhas Propostas"/>
+
+    <item
+        android:id="@+id/orcamentos"
+        android:icon="@drawable/icon_money"
+        android:title="Orçamentos"/>
+
+    <item
+        android:id="@+id/premium"
+        android:icon="@drawable/star"
+        android:title="Premium"/>
+
+</menu>

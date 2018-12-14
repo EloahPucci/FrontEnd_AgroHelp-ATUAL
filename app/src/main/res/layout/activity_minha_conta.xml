@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundotela_cadastro"
+    android:padding="10dp"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <Button
+        android:id="@+id/enviarMinhaConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="82dp"
+        android:background="@android:color/holo_green_light"
+        android:text="voltar"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/senhaMinhaConta" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Minha Conta"
+        android:textColor="@android:color/background_dark"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/desenho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/desenho"
+        app:layout_constraintTop_toTopOf="@+id/desenho"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/desenho"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="39dp"
+        android:background="?android:attr/actionModePasteDrawable"
+        app:layout_constraintBottom_toTopOf="@+id/nomeMinhaConta"
+        app:layout_constraintEnd_toStartOf="@+id/titulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+
+    <TextView
+        android:id="@+id/nomeMinhaConta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:drawableLeft="@drawable/ic_nome_box_black_24dp"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:textSize="22dp"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        app:layout_constraintBottom_toTopOf="@+id/cpfMinhaConta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desenho" />
+
+
+    <TextView
+        android:id="@+id/cpfMinhaConta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_receipt_black_24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="22dp"
+        android:singleLine="true"
+        app:layout_constraintBottom_toTopOf="@+id/emailMinhaConta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomeMinhaConta" />
+
+
+    <TextView
+        android:id="@+id/emailMinhaConta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_email_black_24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="22dp"
+        android:singleLine="true"
+        app:layout_constraintBottom_toTopOf="@+id/loginMinhaConta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cpfMinhaConta" />
+
+    <TextView
+        android:id="@+id/loginMinhaConta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="22dp"
+        android:singleLine="true"
+        app:layout_constraintBottom_toTopOf="@+id/senhaMinhaConta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailMinhaConta" />
+
+    <TextView
+        android:id="@+id/senhaMinhaConta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="83dp"
+        android:drawableStart="@drawable/ic_lock_open_black_24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="22dp"
+        android:drawablePadding="10dp"
+        android:singleLine="true"
+        app:layout_constraintBottom_toTopOf="@+id/enviarMinhaConta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginMinhaConta" />
+
+</android.support.constraint.ConstraintLayout>
+
+
